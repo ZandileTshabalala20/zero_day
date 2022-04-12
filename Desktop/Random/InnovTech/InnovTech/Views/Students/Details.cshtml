@@ -1,0 +1,90 @@
+﻿@model InnovTech.Models.Students
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Students</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Course.Course_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course.Course_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentAge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentAge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StudentBirthdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StudentBirthdate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
